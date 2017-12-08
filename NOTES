@@ -1,0 +1,60 @@
+EVENTS: Events are like notifications that are sent to notify our code that
+something happened on the web page
+  THEY'RE TRIGGERED BY: clicking a button, resizing a window, scrolling down,
+        or even pressing a key.
+We can use event listeners to code responses for all these events.
+
+EVENT LISTENERS: An even listener is just a function that basically just sits
+there and waits for a specific event to happen.
+
+EXECUTION STACK: Think of the execution stack as the landing are for things
+that are going to be executed. The rule is that an event can only be processed
+or handled as soon as the execution stack is empty which means that all the functions
+have returned. In other words it can't execute it until all the functions have been executed.
+
+
+MESSAGE QUEUE: This is where all the events that happen in the browser are put
+and they sit there waiting to be processed. So this queue only happens once
+the execution stack is empty
+
+EVENT LISTENERS ARE CALLED: So now the event listener can be called, and since it's a
+function, it gets it's own execution context, which is then put on top of the stack
+and becomes an active execution context. This is how events are proccessed, and how
+event listeners work.76
+
+
+LESSONS OVERVIEW:
+-How to set up an event handler
+-What a callback function is
+-What an anonymous function is
+-Another way to select elements by ID
+-How to change the image of an <img> element.
+
+SETTING UP AN EVENT HANDLER: Select the element in which the event will happen
+  SELECTING SOMETHING: We first select something using query selector. and then
+      we do something with that selection that the query selector method returns.
+      After selecting the element we want, we add the event listener, and in the
+      parenthesis we have 2 arguments. The first one is the event type, which in
+      our case is simply "click" and the
+      second one
+    EXAMPLE:
+      document.querySelector(".btn").addEventListener  ("click")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
